@@ -98,8 +98,13 @@ h2 {
 
 .papertitle {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 700;
+}
+
+h4.papertitle {
+    margin: 0;
+    font-weight: bold;
 }
 
 .name {
@@ -119,10 +124,17 @@ h2 {
   width: 160px;
   height: 160px;
   position: absolute;
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity .25s ease-in-out;
 }
+
+.one:hover .two {
+  opacity: 1;  /* 鼠标悬停显示GIF */
+}
+
 
 .fade {
   transition: opacity .2s ease-in-out;
