@@ -7,7 +7,7 @@
 
     <meta name="author" content="Huangyue Yu">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon/baby2.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     
   </head>
@@ -25,7 +25,7 @@
                 <p>
 		            I am a research engineer at the <a href="https://www.bigai.ai/">BIGAI</a>, General Vision Lab, focusing on 3D scene understanding, 3D scene generation, and embodied intelligence.
                     My work aims to build systems capable of perceiving, reconstructing, and generating realistic environments to support intelligent agents.
-                    I received both my Master (2021) degrees from Beihang University.</a>
+                    I received my Master (2021) degrees from Beihang University.</a>
                 </p>
                 <p style="text-align:center">
                   <a href="mailto:yuhuangyue@bigai.ai">Email</a> &nbsp;/&nbsp;
@@ -99,7 +99,8 @@
     <a href="https://arxiv.org/abs/2505.02388">Paper</a> /
     <a href="https://meta-scenes.github.io/">Project</a> /
     <a href="https://github.com/meta-scenes/MetaScenes">Code</a> /
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe66mSC6vlsguvtMgNHgu13VpWhCjlrG9EPmK0IaonUbQRX-w/viewform?usp=send_form">Data</a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe66mSC6vlsguvtMgNHgu13VpWhCjlrG9EPmK0IaonUbQRX-w/viewform?usp=send_form">Data</a> /
+    <a href="javascript:void(0)" onclick="showCitation('data/metascenes.bib')">Cite</a>
   </td>
 
 </tr>
@@ -150,7 +151,8 @@
 
     <a href="https://arxiv.org/abs/2401.09340">Paper</a> /
     <a href="https://scene-verse.github.io/">Project</a> /
-    <a href="https://github.com/scene-verse/sceneverse">Code</a>
+    <a href="https://github.com/scene-verse/sceneverse">Code</a> /
+    <a href="javascript:void(0)" onclick="showCitation('data/sceneverse.bib')">Cite</a>
   </td>
 
 </tr>
@@ -195,7 +197,8 @@
     </div>
 
     <a href="paper/wang21_THMS.pdf">Paper</a> /
-    <a href="https://zhimin-wang.github.io/publication/thms_2021/pages/21_THMS.html">Project</a>
+    <a href="https://zhimin-wang.github.io/publication/thms_2021/pages/21_THMS.html">Project</a> /
+    <a href="javascript:void(0)" onclick="showCitation('data/thms_2021.bib')">Cite</a>
 
   </td>
 
@@ -229,7 +232,7 @@
   <td style="width:auto; vertical-align:middle;">
     <h4 class="papertitle">First- And Third-Person Video Co-Analysis By Learning Spatial-Temporal Joint Attention</h4>
 
-    <a><strong>Huangyue Yu*</strong></a>,
+    <a><strong>Huangyue Yu</strong></a>,
     <a href="https://cai-mj.github.io/">Minjie Cai</a>,
     <a href="https://liuyunfei.net/">Yunfei Liu</a>,
     <a href="https://scse.buaa.edu.cn/info/1078/2673.htm">Feng Lu</a>,
@@ -240,7 +243,8 @@
       <img src="https://img.shields.io/badge/Natural%20Interaction-grey.svg">
     </div>
 
-    <a href="paper/yu_pami.pdf">Paper</a>
+    <a href="paper/yu_pami.pdf">Paper</a> /
+    <a href="javascript:void(0)" onclick="showCitation('data/pami.bib')">Cite</a>
   </td>
 
 </tr>
@@ -287,7 +291,9 @@
 
     <a href="paper/wang20_ISMAR.pdf">Paper</a> /
     <a href="https://zhimin-wang.github.io/publication/ismar_2020/pages/20_ISMAR.html">Project</a> /
-    <a href="https://zhimin-wang.github.io/publication/ismar_2020/pages/ppt/wang20_ISMAR.pdf">PPT</a>
+    <a href="https://zhimin-wang.github.io/publication/ismar_2020/pages/ppt/wang20_ISMAR.pdf">PPT</a> /
+
+    <a href="javascript:void(0)" onclick="showCitation('data/ismar_2020.bib')">Cite</a>
 
   </td>
 
@@ -321,7 +327,7 @@
   <td style="width:auto; vertical-align:middle;">
     <h4 class="papertitle">What I See Is What You See: Joint Attention Learning for First and Third Person Video Co-analysis</h4>
 
-    <a><strong>Huangyue Yu*</strong></a>,
+    <a><strong>Huangyue Yu</strong></a>,
     <a href="https://cai-mj.github.io/">Minjie Cai</a>,
     <a href="https://liuyunfei.net/">Yunfei Liu</a>,
     <a href="https://scse.buaa.edu.cn/info/1078/2673.htm">Feng Lu</a>,
@@ -332,7 +338,8 @@
       <img src="https://img.shields.io/badge/Natural%20Interaction-grey.svg">
     </div>
 
-    <a href="https://arxiv.org/pdf/1904.07424">Paper</a>
+    <a href="https://arxiv.org/pdf/1904.07424">Paper</a> /
+    <a href="javascript:void(0)" onclick="showCitation('data/acmmm.bib')">Cite</a>
   </td>
 
 </tr>
@@ -343,5 +350,74 @@
         </td>
       </tr>
     </table>
+
+  <!-- ========================== GLOBAL CITATION MODAL (write once) ========================== -->
+<div id="overlay" style="
+    display:none; position:fixed; inset:0; background:rgba(0,0,0,0.45);
+    backdrop-filter: blur(2px); z-index:999;
+"></div>
+
+<div id="citeModal" style="
+    display:none; position:fixed; top:50%; left:50%; transform:translate(-50%, -50%);
+    background:#fff; border-radius:12px; padding:22px;
+    width:560px; max-width:90%; box-shadow:0 12px 40px rgba(0,0,0,.28);
+    z-index:1000; font-size:15px; animation:fadeIn .25s ease-out;
+">
+    <h3 style="margin-top:0;font-size:18px;font-weight:600;">📄 Citation (BibTeX)</h3>
+
+    <pre id="bibText" style="
+        background:#f6f6f6; padding:14px; border-radius:8px;
+        max-height:300px; overflow:auto; margin-bottom:16px;
+        border:1px solid #e2e2e2; white-space:pre-wrap;
+    "></pre>
+
+    <div style="display:flex;justify-content:flex-end;gap:10px;">
+        <button onclick="copyBib()" style="background:#4C8BF5;color:#fff;border:none;border-radius:6px;padding:6px 14px;cursor:pointer;">Copy</button>
+        <button onclick="downloadBib()" style="background:#3DBE6C;color:#fff;border:none;border-radius:6px;padding:6px 14px;cursor:pointer;">Download</button>
+        <button onclick="closeCitation()" style="background:#777;color:#fff;border:none;border-radius:6px;padding:6px 14px;cursor:pointer;">Close</button>
+    </div>
+</div>
+
+<script>
+function showCitation(bibfile) {
+    fetch(bibfile).then(res => res.text()).then(data=>{
+        document.getElementById('bibText').innerText = data;
+        document.getElementById('citeModal').style.display = 'block';
+        document.getElementById('overlay').style.display = 'block';
+    });
+}
+function closeCitation(){
+    citeModal.style.display="none"; overlay.style.display="none";
+}
+function copyBib(){
+    navigator.clipboard.writeText(bibText.innerText);
+    toast("Copied!");
+}
+function downloadBib(){
+    let blob=new Blob([bibText.innerText],{type:"text/plain"});
+    let a=document.createElement("a");
+    a.href=URL.createObjectURL(blob);a.download="citation.bib";a.click();
+}
+
+function toast(msg){ // 复制成功漂浮提示（可选）
+    let t=document.createElement("div");
+    t.innerText=msg;
+    Object.assign(t.style,{
+        position:"fixed",bottom:"30px",left:"50%",transform:"translateX(-50%)",
+        background:"#3DBE6C",color:"#fff",padding:"8px 14px",
+        borderRadius:"6px",fontSize:"14px",opacity:"0",transition:".4s",
+        zIndex:2000
+    });
+    document.body.appendChild(t);
+    setTimeout(()=>t.style.opacity="1",20);
+    setTimeout(()=>{t.style.opacity="0";setTimeout(()=>t.remove(),400)},2000);
+}
+</script>
+
+<style>
+@keyframes fadeIn { from{opacity:0;transform:translate(-50%,-48%);} to{opacity:1;} }
+</style>
+
+
   </body>
 </html>
