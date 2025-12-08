@@ -48,7 +48,19 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+<script>
+fetch("https://api.countapi.xyz/hit/yuhuangyue.github.io/visits")
+  .then(res => res.json())
+  .then(data => {
+    document.getElementById("visitors").innerText = data.value;
+  });
+</script>
 
+<div style="font-size: 16px;">
+    🌏 Total Visitors: <span id="visitors">Loading...</span>
+</div>
+
+			  
       <tr onmouseout="metascenes_stop()" onmouseover="metascenes_start()" >
   <td style="width:320px;vertical-align:middle;padding:16px;">
     <div class="one">
