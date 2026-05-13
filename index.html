@@ -49,7 +49,62 @@
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
-			  
+	  <tr onmouseout="sceneverse++_stop()" onmouseover="sceneverse++_start()" >
+  <td style="width:320px;vertical-align:middle;padding:16px;">
+    <div class="one">
+      <div class="two" id='sceneverse++_image'>
+        <img src="images/sceneverse++.gif" width="320">
+      </div>
+      <div id="sceneverse++_bar">
+      <img src='images/sceneverse++.png' width="320">
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      function sceneverse++_start() {
+        document.getElementById('sceneverse++_image').style.opacity = "1";
+        document.getElementById('sceneverse++_bar').style.opacity = "0";
+      }
+      function sceneverse++_stop() {
+        document.getElementById('sceneverse++_image').style.opacity = "0";
+        document.getElementById('sceneverse++_bar').style.opacity = "1";
+      }
+      sceneverse++_stop();
+    </script>
+  </td>
+
+  <td style="width:auto; vertical-align:middle;">
+    <h4 class="papertitle">SceneVerse++: Lifting Unlabeled Internet-level Data for 3D Scene Understanding</h4>
+
+    <a href="https://yixchen.github.io">Yixin Chen</a>,
+    <a href="">Yaowei Zhang</a>,
+    <a><strong>Huangyue Yu</strong></a>,
+    <a href="">Junchao He</a>,
+    <a href="">Yan Wang</a>,
+    <a href="">Jiangyong Huang</a>,
+    <a href="">Hongyu Shen</a>,
+    <a href="">Junfeng Ni</a>,
+    <a href="">Shaofei Wang</a>,
+    <a href="https://buzz-beater.github.io/">Baoxiong Jia*</a>,
+    <a href="https://zhusongchun.net/">Song-Chun Zhu</a>,
+    <a href="https://siyuanhuang.com/">Siyuan Huang</a>,
+
+    <div class="pubcite">
+      <i><font size="3">Conference on Computer Vision and Pattern Recognition (CVPR) 2026</font></i><br>
+      * equal contribution <br>
+      <img src="https://img.shields.io/badge/CVPR2026-Conference%20Paper-green.svg">
+      <img src="https://img.shields.io/badge/3D%20Vision%20Language-red.svg">
+    </div>
+
+    <a href="https://sv-pp.github.io/assets/CVPR26_SVPP.pdf">Paper</a> /
+    <a href="https://sv-pp.github.io/">Project</a> /
+    <a href="https://github.com/sv-pp/SceneVersepp">Code</a> /
+    <a href="https://huggingface.co/datasets/bigai/SceneVersepp">Data</a> /
+    <a href="javascript:void(0)" onclick="showCitation('data/sceneverse++.bib')">Cite</a>
+  </td>
+
+</tr>
+
       <tr onmouseout="metascenes_stop()" onmouseover="metascenes_start()" >
   <td style="width:320px;vertical-align:middle;padding:16px;">
     <div class="one">
